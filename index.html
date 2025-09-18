@@ -2,11 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>igos site</title>
-  <link rel="stylesheet" href="style.css">
+  <title>IGOS Site</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .button-link {
+      text-decoration: none;
+    }
+
+    .animated-button {
+      position: relative;
+      padding: 1rem 2rem;
+      background-color: #1e1e1e;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .animated-button:hover {
+      background-color: #333;
+    }
+
+    .animated-button svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+    .text {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .circle {
+      width: 8px;
+      height: 8px;
+      background-color: red;
+      border-radius: 50%;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-<a href="EAGLERCRAFT.html" class="button-link">
+  <a href="EAGLERCRAFT.html" class="button-link">
     <button class="animated-button">
       <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
         <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -18,4 +75,5 @@
       </svg>
     </button>
   </a>
-
+</body>
+</html>
